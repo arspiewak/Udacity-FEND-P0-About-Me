@@ -1,0 +1,136 @@
+/*  Style sheet for FEND-P0 About Me
+ *
+ * Adapted from "P0: About Me" class download by Alan Spiewak, December 2015
+ */
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 0;
+}
+
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+/* HEADING */
+
+.header-content {
+  height: 100%;
+}
+
+header {
+  height: 25vw;
+  max-height: 150px;
+  width: 100%;
+}
+
+.udacity-logo {
+  max-height: 100%;
+  width: 20%;
+  float: left;
+}
+
+h1 {
+  float: left;
+  /* For some reason the heading is centered with 5% padding in Chrome 
+   * but not in CodePen.
+   * Since public release is through CodePen, I'm using 2% here, which looks
+   * centered in CP and top-aligned in Chrome. YMMV
+   */
+  padding-top: 2%;
+  width: 80%;
+  color: rgba(39, 77, 77, 0.79);
+  font-weight: normal;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 464px) and (min-width: 381px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 465px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .header-content {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .header-content {
+    padding-top: 5px;
+  }
+}
+
+
+/* MAIN SECTIONS */
+
+.hero {
+  padding: 1em;
+  max-width: 100%;
+  background-color: #284444;
+  color: white;
+}
+
+.my-picture {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 40%;
+  border: 2px solid black;
+  box-shadow: 1px 3px 20px #031717;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.footer-picture {
+  display: block;
+  margin: 0 auto 10px;
+  max-height: 320px;
+  max-width: 100%;
+  border: 10px double black;
+}
+
+.iama {
+  max-width: 100%;
+  color: #A576BC;
+  letter-spacing: 0.05em;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.my-info {
+  max-width: 100%;
+  font-size: 25px;
+  margin: 0 auto 20px;
+}
+
+.my-info:last-of-type {
+  margin: 0;
+}
+
+.my-name {
+  color: white;
+}
+
+.about-me {
+  padding: 1em;
+}
